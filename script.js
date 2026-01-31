@@ -369,15 +369,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!currentUser) return;
         const item = currentUser.history.find(i => i.id === id);
         if (item) {
-            // Switch to the correct tab
-            const tabBtn = document.querySelector(`.tab-btn[data-tab="${item.type}"]`);
-            if (tabBtn) {
-                tabBtn.click();
-            }
-
             displayResult(item.result, item.type);
             // Optionally scroll to result
-            document.getElementById('result-content').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('generator').scrollIntoView({ behavior: 'smooth' });
             // Close sidebar on mobile?
             if (window.innerWidth < 768) {
                 historySidebar.classList.remove('active');
