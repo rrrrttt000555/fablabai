@@ -28,7 +28,7 @@
                 <li><a href="#features" class="nav-link">Возможности</a></li>
             </ul>
             
-            <div class="nav-auth" id="nav-auth">
+            <div class="nav-auth" id="nav-auth" style="display: none;">
                 <!-- Вставляется JS: Кнопка Войти или Профиль -->
                 <button class="btn-auth" id="login-btn">Войти</button>
             </div>
@@ -204,8 +204,8 @@
                     <input type="password" id="login-password" required placeholder="******">
                 </div>
                 <button type="submit" class="btn btn-primary full-width">Войти</button>
-                <div class="divider">или</div>
-                <button type="button" class="btn google-btn" id="google-login-btn">
+                <div class="divider" style="display: none;">или</div>
+                <button type="button" class="btn google-btn" id="google-login-btn" style="display: none;">
                     <i class="fab fa-google"></i> Войти через Google
                 </button>
             </form>
@@ -221,8 +221,8 @@
                     <input type="password" id="register-password" required placeholder="******">
                 </div>
                 <button type="submit" class="btn btn-primary full-width">Зарегистрироваться</button>
-                <div class="divider">или</div>
-                <button type="button" class="btn google-btn" id="google-register-btn">
+                <div class="divider" style="display: none;">или</div>
+                <button type="button" class="btn google-btn" id="google-register-btn" style="display: none;">
                     <i class="fab fa-google"></i> Регистрация через Google
                 </button>
             </form>
